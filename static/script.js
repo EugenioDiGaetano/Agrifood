@@ -1,15 +1,3 @@
-/*
-const addElementUrl = "https://6a0jbv2de2.execute-api.us-east-1.amazonaws.com/Agrifood/AddElement";
-
-const homeUrl = "https://6a0jbv2de2.execute-api.us-east-1.amazonaws.com/Agrifood/Home";
-
-const delUrl = "https://6a0jbv2de2.execute-api.us-east-1.amazonaws.com/Agrifood/DelEle";
-
-const prenUrl = "https://6a0jbv2de2.execute-api.us-east-1.amazonaws.com/Agrifood/ModifyElement";
-
-const refUrl = "https://6a0jbv2de2.execute-api.us-east-1.amazonaws.com/Agrifood/RefreshElement";
-*/
-
 const filepath = 'Url.json';
 
 let aggiungiUrl, homeUrl, eliminaUrl, prenotaUrl, aggiornaUrl;
