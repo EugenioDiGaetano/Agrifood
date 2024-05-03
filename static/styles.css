@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, serif;
+	background-color: #E2FFE3;
+}
+
+.header {
+    position: fixed;
+	top: 0;
+	width: 100%;
+	
+    background-color: #64E669;
+    padding: 20px 0;
+    text-align: center;
+	display: flex; 
+	justify-content: space-between; 
+    align-items: center;
+}
+
+.title {
+    color: #000000;
+    font-size: 35px;
+    padding: 0 5%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    flex: 1; 
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.new-post-section {
+	width: 90%;
+	min-width: 90%;
+    max-width: 90%;
+    padding: 2%;
+    background-color: #F7FFFB;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.new-post-heading {
+    font-size: 25px;
+    margin-bottom: 5px;
+    cursor: pointer; 
+}
+
+.center-text {
+    text-align: center;
+}
+
+.new-post-content {
+    display: block; 
+}
+
+.new-post-content.hidden {
+    display: none; 
+}
+
+.new-post-form .form-group {
+    margin-bottom: 15px;
+}
+
+.new-post-form label,
+.post label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.new-post-form input[type="text"],
+.new-post-form input[type="number"],
+.new-post-form textarea,
+.new-post-form select,
+.new-post-form button,
+.search-bar input[type="text"],
+.search-bar button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.new-post-form textarea {
+    resize: vertical;
+}
+
+.new-post-form button,
+.search-bar button { 
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-post-form button:hover,
+.search-bar button:hover { 
+    background-color: #0b6730;
+}
+
+.search-bar {
+    position: relative;
+    top: 50%; 
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #0b6730;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #013220;
+}
+
+.post-list-section{
+	width: 100%;
+	min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 2% 0; 
+    margin-top: 2%; 
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 4%; 
+    margin-bottom: 2%;
+    background-color: #E9F7E7;
+    width: 90%; 
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: #000000;
+
+}
+
+.post p {
+    margin-bottom: 2%;
+}
+
+.post label {
+    font-weight: bold;
+}
+
+.post button {
+    padding: 1% 2%;
+    border: none;
+    border-radius: 10000px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+	margin-bottom: 1%;
+	margin-right: 1%;
+}
+
+.post button:hover {
+    background-color: #45a049;
+}
+
+#logo {
+	width: 5%;
+    height: auto;
+    position: relative;
+    top: 50%; 
+    left: 30px;
+    display: flex;
+    align-items: center;
+}

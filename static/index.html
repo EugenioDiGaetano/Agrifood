@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrifood</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+	    <img id="logo" src="favicon.ico" alt="Logo del sito">
+        <h1 class="title">Bacheca Online per la Vendita di Prodotti Agricoli</h1>
+            <div class="search-bar">
+                <input type="text" id="search" name="search" placeholder="Cerca per keyword">
+                <button id="search-button">Cerca</button>
+            </div>
+    </header>
+
+    <main class="main-container">
+        <section class="new-post-section">
+			<h2 class="new-post-heading center-text">Inserisci un Nuovo Post</h2>
+            <div class="new-post-content hidden">
+                <form id="post-form" class="new-post-form">
+                    <div class="form-group">
+                        <label for="title">Titolo:</label>
+                        <input type="text" id="title" name="title" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrizione:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantità Totale Disponibile:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fertilizers">Concimi Utilizzati:</label>
+                        <input type="text" id="fertilizers" name="fertilizers" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="cultivation">Coltivazione:</label>
+                        <select id="cultivation" name="cultivation">
+                            <option value="indoor">Indoor</option>
+                            <option value="outdoor">Outdoor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="crop_type">Tipologia di Coltura:</label>
+						<select id="crop_type" name="crop_type">
+							<option value="Classica" >Classica</option>
+                            <option value="Idroponica">Idroponica</option>
+                            <option value="Acquaponica">Acquaponica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_info">Informazioni di Contatto:</label>
+                        <textarea id="contact_info" name="contact_info" rows="2" maxlength="100"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="100">
+                    </div>                
+						<div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required maxlength="10">
+                    </div>
+                    <button type="submit">Aggiungi Post</button>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="post-list" class="post-list-section">
+            <!-- Qui verranno inseriti dinamicamente i post -->
+        </section>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>

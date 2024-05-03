@@ -1,0 +1,7 @@
+{
+  "aggiungi": "https://IdApi.execute-api.Regione.amazonaws.com/NomeFase/AddElement",
+  "home": "https://IdApi.execute-api.Regione.amazonaws.com/NomeFase/Home",
+  "elimina": "https://IdApi.execute-api.Regione.amazonaws.com/NomeFase/DelEle",
+  "prenota": "https://IdApi.execute-api.Regione.amazonaws.com/NomeFase/ModifyElement",
+  "aggiorna": "https://IdApi.execute-api.Regione.amazonaws.com/NomeFase/RefreshElement"
+}
