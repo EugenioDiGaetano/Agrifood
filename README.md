@@ -10,7 +10,7 @@ Agrifood è una piattaforma web concepita per agevolare il processo di compraven
 ## Architettura del Sistema
 Il sistema Agrifood si basa su un'architettura serverless utilizzando i servizi AWS Lambda, API Gateway, DynamoDB, AWS Amplify, Systems Manager e Amazon EventBridge. Le richieste degli utenti vengono gestite tramite API Gateway e Lambda, mentre DynamoDB funge da database per memorizzare i dati dei prodotti e le prenotazioni di acquisto. AWS Amplify viene utilizzato per lo sviluppo dell'interfaccia web frontend, semplificando la gestione dell'infrastruttura di backend. Systems Manager consente la gestione centralizzata dei parametri di configurazione, mentre Amazon EventBridge gestisce i trigger sul database DynamoDB per mantenere pulita la base di dati.
 
-![Impossibile caricare l'immagine](https://github.com/EugenioDiGaetano/Agrifood/blob/main/architettura.jpg?raw=true)
+![Impossibile caricare l'immagine](https://github.com/EugenioDiGaetano/Agrifood/blob/main/report/architettura.jpg?raw=true)
 
 ## Istruzioni per l'esecuzione del codice
 1. Creare un parametro di tipo stringa su AWS Systems Manager che si chiami 'TableName' che corrisponde al nome della tabella su Dynamodb.
