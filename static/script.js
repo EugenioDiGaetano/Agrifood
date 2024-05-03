@@ -191,7 +191,7 @@ function updatePost(postId) {
         quantity = parseInt(quantity);
     } while (isNaN(quantity) || quantity <= 0);
     do {
-        password = prompt('Inserisci la password per confermare l\'eliminazione:');
+        password = prompt('Inserisci la password per confermare l\'aggiornamento della quantità disponibile:');
         if (password === null) return;
         if (password.length < 1 || password.length > 10) {
             alert('La password deve essere composta da 1 a 10 caratteri.');
